@@ -192,10 +192,6 @@ footer input[type="text"], footer input[type="email"], footer textarea{
 
 
 /* Responsive media quary */
-.hide{
-    display: none;
-}
-
 @media screen and (max-width: 576px){
     .skills-container,
     .resume-container,
@@ -208,9 +204,6 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     nav >ul{
         gap: 20px;
     }
-    /* .banner{
-        flex-direction: column-reverse;
-    } */
     .banner{
         margin: 20px;
     }
@@ -224,6 +217,12 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     footer input[type="text"], footer input[type="email"], footer textarea{
         width: calc(100% - 40px);
     }
+}
 
+/* responsive for tablet */
+@media screen and (min-width: 576px) and (max-width: 990px){
+    .banner{
+        flex-direction: column;
+        }
     
 }
